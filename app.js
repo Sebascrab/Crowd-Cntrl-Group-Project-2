@@ -5,14 +5,14 @@ const app = express();
 app.get('/', (req,res) => res.send('home.hbs'));
 
 app.listen('3000', () => console.log('example of hello world is running'))
-=======
+
 const mysql = require('mysql');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 
 require('dotenv').config();
 
-const app = express();
+
 const port = process.env.PORT || 5500;
 
 app.use(bodyParser.urlencoded({ extended: true }));
