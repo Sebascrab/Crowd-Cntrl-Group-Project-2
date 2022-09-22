@@ -1,4 +1,11 @@
 const express = require('express');
+
+const app = express();
+
+app.get('/', (req,res) => res.send('home.hbs'));
+
+app.listen('3000', () => console.log('example of hello world is running'))
+=======
 const mysql = require('mysql');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
@@ -27,3 +34,4 @@ app.use(express.static('public'));
 //    res.render('home');
 // });
 // app.listen(port, () => console.log(`listening on port ${port}`)); mn
+

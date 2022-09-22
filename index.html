@@ -1,136 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/619ebb2432.js" crossorigin="anonymous"></script>
+    <title>User Management Home</title>
+
 </head>
-
 <body>
-
-    <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
+    <div class="pageContainer">
+      <div class="HomePage">
+        <nav class="navbar has-shadow is-dark">
+          <!-- logo in navbar -->
+          <div class="navbar-brand">
             <a class="navbar-item">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-                <!-- Our Logo Goes Here -->
+            <!-- Here Is where Logo Goes -->
+              <span><img src=""
+                  class="py-2 px-2"></span>
+              <div class="brandName is-size-3">Big Ass Sticky Note</div>
             </a>
-        </div>    
-    </nav>
-    <section class="hero is-link">
-        <div class="hero-body">
-            <h1 class="title is-size-1 has-text-centered">BIG ASS STICKY NOTE</h1>
-            <h3></h3>
-        </div>
-    </section>
-   <div class="hero is-primary is-fullheight">
-       <div class="hero-body">
-           <div class="container">
-               <div class="columns is-centered">
-                   <div class="column is-4">
-                       <form action="" class="box">
-                           <div class="field">
-                               <label class="label">
-                                   Email
-                               </label>
-                               <div class="control has-icons-left">
-                                   <input type="email" class="input" placeholder="bob@bobross.com">
-                                   <span class="icon is-small is-left">
-                                       <i class="fa fa-envelop"></i>
-                                       <!-- email icon -->
-                                   </span>
-                               </div>
-                           </div>
-                           <div class="field">
-                            <label class="label">Password</label>
-                            <div class="control has-icons-left">
-                                <input type="password" class="input" placeholder="password">
-                                <span class="icon is-small is-left">
-                                    <i class="fa fa-lock"></i>  
-                                    <!-- password icon -->
-                                </span>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <lable class="label">
-                                <input type="checkbox" class="checkbox">
-                                Remember me
-                            </lable>
-                        </div>
-                        <div class="field">
-                            <button class="button is-success is-large is-fullwidth">Login</button>
-                        </div>
-                        <div class="field">
-                            <button class="button is-success is-large is-fullwidth">Sign Up</button>
-                        </div>
-                       </form>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-
-   <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>BIG ASS STICKY NOTE</strong> by <a href="https://jgthms.com">Tommy, Abel, Ryan, and Sebastian</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
-    </div>
-  </footer>
-    <div class="hero is-primary is-fullheight">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-centered">
-                    <div class="column is-4">
-                        <form action="" class="box">
-                            <div class="field">
-                                <label class="label">
-                                    Email
-                                </label>
-                                <div class="control has-icons-left">
-                                    <input type="email" class="input" placeholder="bob@bobross.com">
-                                    <span class="icon is-small is-left">
-                                        <i class="fa fa-envelop"></i>
-                                        <!-- email icon -->
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label class="label">Password</label>
-                                <div class="control has-icons-left">
-                                    <input type="password" class="input" placeholder="password">
-                                    <span class="icon is-small is-left">
-                                        <i class="fa fa-lock"></i>
-                                        <!-- password icon -->
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <lable class="label">
-                                    <input type="checkbox" class="checkbox">
-                                    Remember me
-                                </lable>
-                            </div>
-                            <div class="has-text-centered mt-2 rounded">
-                                <button class="button is-success is-fullwidth">Login</button>
-                            </div>
-                            <div class="has-text-centered mt-2 rounded">
-                                <button class="button is-success is-fullwidth">Sign Up</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <!-- Burger dropdown menu for smaller screens -->
+            <a class="navbar-burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+              <a href='./' class="navbar-item is-size-5">HOME</a>
+              <!-- href links for possible pages?  -->
+              <a href='' class="navbar-item is-size-5">TEAM</a>
+              <a href='' class="navbar-item is-size-5">ABOUT</a>
             </div>
+          </div>
+        </nav>
+<!-- Home Layout  -->
+        <div class="column">
+           <table class="table is-bordered is-striped is-narrow is-hoverable">
+               <h1 class="title has-shadow is-size-3">Tasks</h1>
+               <thead>
+                   <tr>
+                       <th>#</th>
+                       <th>Name</th>
+                       <th>Position</th>
+                       <th>Task</th>
+                       <th>Action</th>
+                   </tr>
+                   <tbody>
+                       <tr>
+                           <th>1</th>
+                           <td>Sebastian</td>
+                           <td>Team Member</td>
+                           <td>Set Up Home Page</td>
+                           <td>
+                               <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-eye"></i> View</a>
+                               <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-file-pen"></i> Edit</a>
+                               <a href="#" type="button" class="button is-light is-small"><i class="fa-thin fa-trash"></i> Delete</a>
+                           </td>
+                       </tr>
+                       <tr>
+                            <th>2</th>
+                            <td>Tommy</td>
+                            <td>Project Manger</td>
+                            <td>Set Up Meeting With Team</td>
+                            <td>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-eye"></i> View</a>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-file-pen"></i> Edit</a>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-thin fa-trash"></i> Delete</a>
+                            </td>
+                       </tr>
+                       <tr>
+                            <th>2</th>
+                            <td>Abel</td>
+                            <td>Team Member</td>
+                            <td>Help With BackEnd Work</td>
+                            <td>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-eye"></i> View</a>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-file-pen"></i> Edit</a>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-thin fa-trash"></i> Delete</a>
+                            </td>
+                       </tr>
+                       <tr>
+                            <th>2</th>
+                            <td>Ryan</td>
+                            <td>Team Member</td>
+                            <td>Set Up Sign Up Page</td>
+                            <td>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-eye"></i> View</a>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-file-pen"></i> Edit</a>
+                                <a href="#" type="button" class="button is-light is-small"><i class="fa-thin fa-trash"></i> Delete</a>
+                            </td>
+                        </tr>
+                   </tbody>
+               </thead>
+           </table>
         </div>
-    </div>
 </body>
-
 </html>
+
 set up authorizaTION 
 password, username
 
