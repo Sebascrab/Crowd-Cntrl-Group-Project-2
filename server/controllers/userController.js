@@ -9,11 +9,11 @@ let connection = mysql.createConnection({
   });
 
 
-  // View Users
+  // To view user accounts
 exports.view = (req, res) => {
-  // User the connection
+  // Query to find active users
   connection.query('SELECT * FROM user WHERE status = "active"', (err, rows) => {
-    // When done with the connection, release it
+    // error logging
     if (!err) {
       let removedUser = req.query.removed;
       res.render('home', { rows, removedUser });
