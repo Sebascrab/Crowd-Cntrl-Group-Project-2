@@ -1,0 +1,11 @@
+footer {
+    font-size: 12px;
+    margin: 0;
+    position: absolute !important;
+    height: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+  }
