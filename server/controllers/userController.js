@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 
-// Connection to dot env
+// Setting up to sql
 let connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
