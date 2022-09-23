@@ -10,39 +10,50 @@
 </head>
 
 <body>
-    <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+    <nav class="navbar has-shadow is-dark">
+        <!-- logo in navbar -->
         <div class="navbar-brand">
-            <a class="navbar-item">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-                <!-- Our Logo Goes Here -->
-            </a>
+          <a class="navbar-item">
+            <!-- Here Is where Logo Goes -->
+            <span><img src="" class="py-2 px-2"></span>
+            <div class="brandName is-size-3">Big Ass Sticky Note</div>
+          </a>
+          <!-- Burger dropdown menu for smaller screens -->
+          <a class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
         </div>
-    </nav>
-    <section class="hero is-link">
-        <div class="hero-body">
-            <h1 class="title is-size-1 has-text-centered">BIG ASS STICKY NOTE</h1>
-            <h3></h3>
+        <div class="navbar-menu" id="nav-links">
+          <div class="navbar-end">
+            <a href='./' class="navbar-item is-size-5">HOME</a>
+            <!-- href links for possible pages?  -->
+            <a href='' class="navbar-item is-size-5">TEAM</a>
+            <a href='' class="navbar-item is-size-5">ABOUT</a>
+          </div>
         </div>
+      </nav>
     </section>
-    <div class="hero is-primary is-fullheight">
+    <div class="container is-fullheight">
         <div class="hero is-fullheight">
             <div class="hero-body is-justify-content-center is-align-items-center">
                 <div class="columns is-flex is-flex-direction-column box">
                     <div class="label">
                     
                         <label for="Name">Name</label>
-                        <input class="input is-primary" type="text" placeholder="Name">
+                        <input class="input is-dark" type="text" placeholder="Name">
                     </div>
                     <div class="label">
                         <label for="Name">Phone Number</label>
-                        <input class="input is-primary" type="text" placeholder="Phone Number">
+                        <input class="input is-dark" type="text" placeholder="Phone Number">
                     </div>
                     <div class="label">
                         <label for="Name">Email</label>
-                        <input class="input is-primary" type="password" placeholder="Email">
+                        <input class="input is-dark" type="password" placeholder="Email">
                     </div>
                     <div class="column">
-                        <button class="button is-success is-fullwidth" type="submit">Add Customer</button>
+                        <button class="button has-background-grey-light is-fullwidth" type="submit">Add Customer</button>
                     </div>
 
                 </div>
