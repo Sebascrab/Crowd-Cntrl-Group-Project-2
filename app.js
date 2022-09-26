@@ -33,5 +33,5 @@ app.use(express.static('public'));
 // app.get('/', (req, res) => {
 //    res.render('home');
 // });
-// app.listen(port, () => console.log(`listening on port ${port}`)); mn
+// app.listen(port, () => console.log(`listening on port ${port}`)); 
 
