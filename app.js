@@ -1,37 +1,41 @@
+require('dotenv').config();
+const routes = require('./routes/routes.js');
 const express = require('express');
+const session = require('express-session');
+const exphbs = require('express-handlebars');
+
+const sequelize = require('./config/connection');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const PORT = process.env.PORT || 3000;
 
 const app = express();
+const hbs = exphbs.create({ helpers });
 
-app.get('/', (req,res) => res.send('home.hbs'));
+const sess = {
+    secret: 'Super secret secret',
+    cookie: {
+        maxAge: 300000,
+        httpOnly: true,
+        secure: false,
+        sameSite: 'strict',
+    },
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+};
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
-app.listen('3000', () => console.log('example of hello world is running'))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(session(sess));
 
-const mysql = require('mysql');
-const exphbs = require('express-handlebars');
-const bodyParser = require('body-parser');
+app.use(routes);
 
-require('dotenv').config();
+app.listen(PORT, () => console.log('example of hello world is running'))
 
-
-const port = process.env.PORT || 5500;
-
-app.use(bodyParser.urlencoded({ extended: true }));
-
-// Parse application/json
-app.use(bodyParser.json());
-
-// Static files
-app.use(express.static('public'));
-
-
-
-
-
-
-
-
-// app.get('/', (req, res) => {
-//    res.render('home');
-// });
-// app.listen(port, () => console.log(`listening on port ${port}`)); 
 
