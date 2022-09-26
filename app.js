@@ -1,5 +1,5 @@
 require('dotenv').config();
-const routes = require('./routes/routes.js');
+const routes = require('./routes');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
