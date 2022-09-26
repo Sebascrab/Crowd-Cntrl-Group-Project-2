@@ -1,115 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
     <script src="https://kit.fontawesome.com/619ebb2432.js" crossorigin="anonymous"></script>
     <title>User Management Home</title>
 
 </head>
+
 <body>
     <div class="pageContainer">
-      <div class="HomePage">
-        <nav class="navbar has-shadow is-dark">
-          <!-- logo in navbar -->
-          <div class="navbar-brand">
-            <a class="navbar-item">
-            <!-- Here Is where Logo Goes -->
-              <span><img src=""
-                  class="py-2 px-2"></span>
-              <div class="brandName is-size-3">CROWD CNTRL</div>
-            </a>
-            <!-- Burger dropdown menu for smaller screens -->
-            <a class="navbar-burger" id="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div>
-          <div class="navbar-menu" id="nav-links">
-            <div class="navbar-end">
-                 <a href='./' class="navbar-item is-size-5">Client list</a>
-                 <a href='' class="navbar-item is-size-5">Team</a>
-                 <a href='' class="navbar-item is-size-5">About</a>
-                 <a href='' class="navbar-item is-size-5">Sign Out</a>
-            </div>
-          </div>
-        </nav>
-<!-- Home Layout  -->
-        <div class="column">
-           <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-               <h1 class="title has-shadow is-size-3">CLIENT LIST</h1>
-               
-                   <div class="button is-success">ADD</div>
-                
-               <thead>
-                   <tr>
-                       <th>#</th>
-                       <th>Customer Name</th>
-                       <th>Phone</th>
-                       <th>Email</th>
-                       <th>Action</th>
-                   </tr>
-                   <tbody>
-                       <tr>
-                           <th>1</th>
-                           <td>Sebastian</td>
-                           <td>Team Member</td>
-                           <td>Set Up Home Page</td>
-                           <td>
-                               <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-eye pr-1"></i> View</a>
-                               <a href="#" type="button" class="button is-light is-small"><i class="fa-solid fa-file-pen pr-1"></i> Edit</a>
-                               <a href="#" type="button" class="button is-light is-small is-danger"><i class="fa-solid fa-trash pr-1"></i> Delete</a>
-                           </td>
-                       </tr>
-                       <tr>
+        <div class="HomePage">
+            <nav class="navbar has-shadow has-background-success-dark">
+                <!-- logo in navbar -->
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <!-- Here Is where Logo Goes -->
+                        <span><img src="" class="py-2 px-2"></span>
+                        <div class="brandName is-size-1 has-text-success-light">CROWD CNTRL</div>
+                        <a href="./index.html"></a>
+                    </a>
+                    <!-- Burger dropdown menu for smaller screens -->
+                    <a class="navbar-burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="nav-links">
+                    <di class="navbar-end">
+                        <a href='' class="navbar-item is-size-5 has-text-success-light">Sign Out</a>
+                    </di>
+                </div>
+            </nav>
+            <!-- Home Layout  -->
+            <div class="column">
+                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth ">
+                    <h1 class="title has-shadow is-size-2">CLIENT LIST</h1>
+                    <div class="button is-pulled-right mr-6 is-success">ADD</div>
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Customer Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Sebastian</td>
+                            <td>Team Member</td>
+                            <td>Set Up Home Page</td>
+                            <td>
+                                <a href="#" type="button" class="button is-light is-small is-warning"><i
+                                        class="fa-regular fa-eye pr-1"></i>
+                                    View</a>
+                                <a href="#" type="button" class="button is-light is-small is-info"><i
+                                        class="fa-solid fa-file-pen pr-1"></i>
+                                    Edit</a>
+                                <a href="#" type="button" class="button is-light is-small is-danger"><i
+                                        class="fa-solid fa-trash pr-1"></i> Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
                             <th>2</th>
                             <td>Tommy</td>
                             <td>Project Manger</td>
                             <td>Set Up Meeting With Team</td>
                             <td>
-                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-eye pr-1"></i> View</a>
-                                <a href="#" type="button" class="button is-light is-small"><i class="fa-solid fa-file-pen pr-1"></i> Edit</a>
-                                <a href="#" type="button" class="button is-light is-small is-danger"><i class="fa-solid fa-trash pr-1"></i> Delete</a>
+                                <a href="#" type="button" class="button is-light is-small is-warning"><i
+                                        class="fa-regular fa-eye pr-1"></i>
+                                    View</a>
+                                <a href="#" type="button" class="button is-light is-small is-info"><i
+                                        class="fa-solid fa-file-pen pr-1"></i>
+                                    Edit</a>
+                                <a href="#" type="button" class="button is-light is-small is-danger"><i
+                                        class="fa-solid fa-trash pr-1"></i> Delete</a>
                             </td>
-                       </tr>
-                       <tr>
-                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
                             <td>Abel</td>
                             <td>Team Member</td>
                             <td>Help With BackEnd Work</td>
                             <td>
-                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-eye pr-1"></i> View</a>
-                                <a href="#" type="button" class="button is-light is-small"><i class="fa-solid fa-file-pen pr-1"></i> Edit</a>
-                                <a href="#" type="button" class="button is-light is-small is-danger"><i class="fa-solid fa-trash pr-1"></i> Delete</a>
+                                <a href="#" type="button" class="button is-light is-small is-warning"><i
+                                        class="fa-regular fa-eye pr-1"></i>
+                                    View</a>
+                                <a href="#" type="button" class="button is-light is-small is-info"><i
+                                        class="fa-solid fa-file-pen pr-1"></i>
+                                    Edit</a>
+                                <a href="#" type="button" class="button is-light is-small is-danger"><i
+                                        class="fa-solid fa-trash pr-1"></i> Delete</a>
                             </td>
-                       </tr>
-                       <tr>
-                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
                             <td>Ryan</td>
                             <td>Team Member</td>
                             <td>Set Up Sign Up Page</td>
                             <td>
-                                <a href="#" type="button" class="button is-light is-small"><i class="fa-regular fa-eye pr-1"></i> View</a>
-                                <a href="#" type="button" class="button is-light is-small"><i class="fa-solid fa-file-pen pr-1"></i> Edit</a>
-                                <a href="#" type="button" class="button is-light is-small is-danger"><i class="fa-solid fa-trash pr-1"></i> Delete</a>
+                                <a href="#" type="button" class="button is-light is-small is-warning"><i
+                                        class="fa-regular fa-eye pr-1"></i>
+                                    View</a>
+                                <a href="#" type="button" class="button is-light is-small is-info"><i
+                                        class="fa-solid fa-file-pen pr-1"></i>
+                                    Edit</a>
+                                <a href="#" type="button" class="button is-light is-small is-danger"><i
+                                        class="fa-solid fa-trash pr-1"></i> Delete</a>
                             </td>
                         </tr>
-                   </tbody>
-               </thead>
-           </table>
-        </div>
-        <footer class="footer">
-            <div class="content has-text-centered">
-              <p>
-                <strong>Crowd Cntrl</strong> by Tommy, Abel, Ryan, and Sebastian. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-              </p>
+                    </tbody>
+                    </thead>
+                </table>
             </div>
-          </footer>
+
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>Crowd Cntrl</strong> by Tommy, Abel, Ryan, and Sebastian. The source code is licensed
+                        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                    </p>
+                </div>
+            </footer>
+
 </body>
+
 </html>
 
+set up authorizaTION
+password, username
+
+dummy database
