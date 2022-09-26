@@ -36,6 +36,7 @@ app.use(session(sess));
 
 app.use(routes);
 
-app.listen(PORT, () => console.log('example of hello world is running'))
-
-
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
+  });
+  
