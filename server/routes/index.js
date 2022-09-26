@@ -2,6 +2,9 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
+const apiRoutes = require('./api')
+router.use('/api', apiRoutes);
+
 
 // Routes below:
 router.get('/', userController.view);
