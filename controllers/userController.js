@@ -40,7 +40,7 @@ exports.find = (req, res) => {
 }
 
 exports.form = (req, res) => {
-  res.render('new-user');
+  res.render('new-customer');
 }
 
 // Add new user
@@ -51,7 +51,7 @@ exports.create = (req, res) => {
   // Query to insert new user to db.
   connection.query('INSERT INTO user SET first_name = ?, last_name = ?, email = ?, phone = ?, comments = ?', [first_name, last_name, email, phone, comments], (err, rows) => {
     if (!err) {
-      res.render('new-user', { alert: 'User added successfully.' });
+      res.render('new-customer', { alert: 'User added successfully.' });
     } else {
       console.log(err);
     }
@@ -66,7 +66,7 @@ exports.edit = (req, res) => {
   connection.query('SELECT * FROM user WHERE id = ?', [req.params.id], (err, rows) => {
   //  error logging
     if (!err) {
-      res.render('edit-user', { rows });
+      res.render('edit-customer', { rows });
     } else {
       console.log(err);
     }
@@ -86,7 +86,7 @@ exports.update = (req, res) => {
       connection.query('SELECT * FROM user WHERE id = ?', [req.params.id], (err, rows) => {
         // message confirming user was updated
         if (!err) {
-          res.render('edit-user', { rows, alert: `${first_name} has been updated.` });
+          res.render('edit-customer', { rows, alert: `${first_name} has been updated.` });
         // error logging to console
         } else {
           console.log(err);
