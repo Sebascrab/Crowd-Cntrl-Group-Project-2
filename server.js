@@ -1,3 +1,11 @@
+const exphbs = require('express-handlebars');
+const express = require('express');
+const session = require('express-session');
+const sequelize = require('./config/connection');
+const routes = require('./controllers');
+const path = require('path');
+
+
 const sess = {
     secret: 'secret secret here',
     cookie: {},
@@ -18,8 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(passport.initialize());
-app.use(passport.session());
+
 app.use(routes);
 
 
