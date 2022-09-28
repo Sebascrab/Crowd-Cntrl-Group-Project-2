@@ -14,7 +14,11 @@ router.get('/', (req, res) => {
 
 // GET /api/clients/:id
 router.get('/:id', (req, res) => {
-    Client.findOne()
+    Client.findOne({
+        where: {
+            id: req.params.id
+        },
+    })
         .then(dbClientData => {
             if (!dbClientData) {
                 res.status(404).json({ message: 'No Client found with this id!' });
