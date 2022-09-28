@@ -6,6 +6,7 @@ const homeRoutes = require('./home-routes');
 // Routes below:
 router.use('/api', apiRoutes);
 router.use('/', homeRoutes);
+router.use('/auth', authRoutes);
 
 
 

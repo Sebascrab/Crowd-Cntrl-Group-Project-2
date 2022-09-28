@@ -1,9 +1,10 @@
-const { userCreate, userLogin, userLogout } = require('./authControllers');
-
+const passport = require('passport');
 const router = require('express').Router();
 
-router.route('/').post(userCreate);
-router.route('/login').post(userLogin);
-router.route('/logout').post(userLogout);
+router.post('/login', passport.authenticate('local', {
+        successRedirect: '/dashboard',
+        failureMessage: 'Invalid Credentials'
+    }
+));
 
-module.exports = router
+module.exports = router;
