@@ -22,13 +22,17 @@
                         <!-- Here Is where Logo Goes -->
                         <span><img src="img/CrowdCNTRL.png" alt="site logo" style="max-height: 70px" class="py-2 px-2"></span>
                         <div class="brandName is-size-1 has-text-success-light">CROWD CNTRL</div>
-                        <a href="./index.html"></a>
+                        <a href="/dashboard"></a>
                     </a>
                 </div>
                 <div class="navbar-menu" id="nav-links">
-                    <di class="navbar-end">
-                        <a href='' class="navbar-item is-size-5 has-text-success-light">Sign Out</a>
-                    </di>
+                    <div class="navbar-end">
+                        {{#if loggedIn}}
+                        <a href='/logout' class="navbar-item is-size-5 has-text-success-light">Sign Out</a>
+                        {{else}}
+                        <a href='/' class="navbar-item is-size-5 has-text-success-light">Log In</a>
+                        {{/if}}
+                    </div>
                 </div>
             </nav>
 
