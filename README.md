@@ -45,7 +45,15 @@
 
   ## Questions 
 
-  Github: [Sebascrab](https://github.com/Sebascrab) 
+  Githubs: 
+  
+   *[Alexander](https://github.com/Sebascrab) 
+
+   *[Abel](https://github.com/AbelitoG) 
+
+   *[Ryan](https://github.com/ryancharleson) 
+
+   *[Tommy](https://github.com/TommyAlv) 
 
   Email: alexanders.tischner@outlook.com  
 
