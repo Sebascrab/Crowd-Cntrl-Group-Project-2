@@ -9,14 +9,17 @@ router.get('/', (req, res) => {
 router.get('/dashboard', withAuth, (req, res) => {
     async function getClients() {
         const clients = await Client.findAll();
-        return clients.dataValues;
+        return clients.map(client => client.dataValues);
     }
     async function renderDashboard() {
         try {
-            const clients = await getClients()
+            const clients = await getClients();
+    
             res.render('dashboard', {
-                loggedIn: req.user, clients
+                loggedIn: req.user, 
+                clients
             });
+           
 
         } catch (error) {
             console.log(error);
@@ -32,9 +35,7 @@ router.get('/signup', (req, res) => {
 router.get('/addclient', withAuth, (req, res) => {
     res.render('add-client');
 });
-router.get('/editclient', withAuth, (req, res) => {
-    res.render('edit-client');
-});
+
 router.get('/logout', (req, res) => {
     req.logout(function (err) {
         if (err) {
