@@ -2,7 +2,8 @@
   "name": "pmdb12",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
+  "engines": {"node": "16"},
   "dependencies": {
     "abbrev": "^1.1.1",
     "accepts": "^1.3.8",
